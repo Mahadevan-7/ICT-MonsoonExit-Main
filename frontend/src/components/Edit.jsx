@@ -30,7 +30,16 @@ const Edit = () => {
   };
 
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" height="90vh">
+    <Box 
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "90vh",
+        backgroundColor: "white",
+        minHeight: "100vh",
+      }}
+    >
       <Box display="flex" flexDirection="column" gap={2} width="600px">
         <TextField placeholder="Title" name="title" value={inputs.title} onChange={inputHandler} />
         <TextField placeholder="Content" name="content" value={inputs.content} onChange={inputHandler} multiline rows={4} />

@@ -31,11 +31,17 @@ const Home = () => {
 
 
   return (
-    <Box sx={{ flexGrow: 1, p: 4 }}>
+    <Box sx={{ 
+      flexGrow: 1, 
+      p: 4, 
+      pt: 8,
+      backgroundColor: "white",
+      minHeight: "100vh"
+    }}>
       <Grid container spacing={4} justifyContent="center">
         {art.map((val, index) => (
           <Grid item key={index}>
-            <Card sx={{ maxWidth: 280, minWidth: 250 }}>
+            <Card sx={{ maxWidth: 350, minWidth: 320 }}>
               <CardMedia
                 sx={{ height: 140 }}
                 image={val.img_url}
