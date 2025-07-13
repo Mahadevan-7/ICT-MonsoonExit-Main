@@ -39,6 +39,8 @@ const Add = () => {
             alignItems: "center",
             justifyContent: "center",
             height: "90vh",
+            backgroundColor: "white",
+            minHeight: "100vh",
           }}
         >
           <Box
